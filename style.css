@@ -129,6 +129,7 @@ p{
     justify-content: space-around;
     border: transparent;
     border-radius: 6px;
+    padding-bottom: 7em;
 
 }
 .tabs > *{
@@ -143,11 +144,7 @@ footer{
     left: 0;
     right: 0;
 }
-.drag{
-    margin: 2em 0;
-    color: inherit;
-    padding-bottom: 7em;
-}
+
 
 /*classes that change the mode */
 .light-body{
