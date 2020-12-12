@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name='description' content='A special todo app by laura'>
+  <link rel="preconnec noopener" href="https://fonts.gstatic.com">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js" ></script>
+  <script src="https://use.fontawesome.com/289831cdda.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet preload noopener" as="font">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <header>
+      <h2>TODO <span></span><img src="./images/icon-sun.svg" alt="swith-mode" class="mode"></span></h2>
+      <form class="todo-form" aria-label="todo-input">
+        <input type="text" class="todo-input" aria-label="todo-input" placeholder="Create a new todo..." 
+        aria-placeholder="new-todo..." required>
+      </form>
+    </header>
+
+    <main class="todo-container">
+      <ul class="todo-list" id="all-todos"><div class="todo done">
+          <button class="complete-btn"  aria-label="completed-button"><div class="circle completed"><span class="fa fa-check"></span></div></button>
+          <li class="todo-item strike"> Create your first todo today</li>
+          <button class="close-btn" aria-label="close-button"><span class="x">✕</span></button>
+        </div><div class="todo">
+          <button class="complete-btn" aria-label="completed-button"><div class="circle"></div></button>
+          <li class="todo-item"> Keep your tasks organized in one place</li>
+          <button class="close-btn" aria-label="close-button"><span class="x">✕</span></button>
+        </div><div class="todo">
+          <button class="complete-btn" aria-label="completed-button"><div class="circle"></div></button>
+          <li class="todo-item"> Create your first shopping list using our todo app</li>
+          <button class="close-btn"  aria-label="close-button"><span class="x">✕</span></button>
+        </div></ul>
+    </main>
+    <p class="tabs"><span>All</span><span>Active</span><span>Completed</span></p>
+    <p class="drag">Drag and drop to reorder list</p>
+    <footer>
+      <p class="heart">Made with ❤️ by Laura </p>
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>.
+      </p>
+    </footer>
+  <script>
+      const allTodo = document.getElementById('all-todos')
+      new Sortable(allTodo, {
+        animation: 200
+      })
+  </script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
