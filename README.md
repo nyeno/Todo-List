@@ -7,3 +7,8 @@ I've also implemented dark mode and light mode for the todo app
 
 This is a challege from frontendmentors and it was really exciting
 
+
+Here's a link to view it on real time 
+
+
+https://todolistbytaeyang.web.app/
