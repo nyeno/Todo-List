@@ -11,7 +11,7 @@ const footer = document.getElementsByTagName('footer')
 const tabs = document.querySelector('.tabs')
 
 
-//event listener
+//event listeners
 document.addEventListener('DOMContentLoaded', getTodos)
 todoForm.addEventListener('submit', addTodo)
 image.addEventListener('click', mode)
