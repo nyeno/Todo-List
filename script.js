@@ -1,4 +1,4 @@
-//Grabbing my html tags so I can manipulate them with javascript
+//Grabbing all my html tags so I can manipulate them with javascript
 
 const todoInput = document.querySelector('.todo-input');
 const todoForm = document.querySelector('.todo-form');
